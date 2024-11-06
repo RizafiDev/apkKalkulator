@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_custom"
+    tools:context=".KalkulatorActivity">
+
+    <LinearLayout
+        android:id="@+id/brand"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:paddingLeft="25dp"
+            android:textColor="#f97316"
+            android:paddingTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Kalkulator"/>
+    </LinearLayout>
+
+    <!-- Atas -->
+    <LinearLayout
+        android:id="@+id/layoutHasil"
+        app:layout_constraintTop_toBottomOf="@id/brand"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/gridLayout"
+        android:paddingHorizontal="30dp">
+
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:textAlignment="textEnd"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <!-- Bawah -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_gravity="center">
+
+        <!-- Baris Action -->
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/circle_button"
+            android:backgroundTint="#FFFFFF"
+            android:text="C"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/percentBtn"
+            android:text="%"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/backspaceBtn"
+            android:text="⌫"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/devideBtn"
+            android:text="/"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <!-- Baris pertama -->
+        <Button
+            android:id="@+id/Btn7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/circle_button"
+            android:text="7"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/Btn8"
+            android:text="8"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/Btn9"
+            android:text="9"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/multipleBtn"
+            android:text="X"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <!-- Baris kedua -->
+        <Button
+            android:id="@+id/Btn4"
+            android:text="4"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/Btn5"
+            android:text="5"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/Btn6"
+            android:text="6"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/lessBtn"
+            android:text="-"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <!-- Baris ketiga -->
+        <Button
+            android:id="@+id/Btn1"
+            android:text="1"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/Btn2"
+            android:text="2"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/Btn3"
+            android:text="3"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/plusBtn"
+            android:text="+"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <!-- Baris keempat -->
+        <Button
+            android:id="@+id/dotBtn"
+            android:text="."
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/Btn0"
+            android:text="0"
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/commaBtn"
+            android:text=","
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/hasilBtn"
+            android:text="="
+            android:textSize="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:layout_margin="8dp"/>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

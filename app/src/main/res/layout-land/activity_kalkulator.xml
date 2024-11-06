@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KalkulatorActivity">
+
+    <!-- Atas -->
+    <LinearLayout
+        android:id="@+id/layoutHasil"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/gridLayout"
+        android:paddingHorizontal="30dp">
+
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:hint="tes"
+            android:textAlignment="textEnd"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <!-- Bawah -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+        android:rowCount="5"
+        android:layout_gravity="center">
+
+        <!-- Baris Action -->
+
+        <Button
+            android:id="@+id/sinBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="sin"
+            />
+
+        <Button
+            android:id="@+id/radBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="rad"
+            />
+
+        <Button
+            android:id="@+id/degBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="deg"
+            />
+
+
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="C"
+             />
+
+        <Button
+            android:id="@+id/percentBtn"
+            android:text="%"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/backspaceBtn"
+            android:text="⌫"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/devideBtn"
+            android:text="/"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/cosBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="cos"
+            />
+
+        <Button
+            android:id="@+id/tanBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="tan"
+            />
+
+        <Button
+            android:id="@+id/invBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="inv"
+            />
+
+        <!-- Baris pertama -->
+        <Button
+            android:id="@+id/Btn7"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="7"
+             />
+
+        <Button
+            android:id="@+id/Btn8"
+            android:text="8"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/Btn9"
+            android:text="9"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/multipleBtn"
+            android:text="X"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/logBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="log"
+            />
+
+        <Button
+            android:id="@+id/lnBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="ln"
+            />
+
+        <Button
+            android:id="@+id/exclamationBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="!"
+            />
+
+        <!-- Baris kedua -->
+        <Button
+            android:id="@+id/Btn4"
+            android:text="4"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/Btn5"
+            android:text="5"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/Btn6"
+            android:text="6"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/lessBtn"
+            android:text="-"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/phiBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="π"
+            />
+
+        <Button
+            android:id="@+id/eBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="e"
+            />
+
+        <Button
+            android:id="@+id/ponBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="^"
+            />
+
+        <!-- Baris ketiga -->
+        <Button
+            android:id="@+id/Btn1"
+            android:text="1"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/Btn2"
+            android:text="2"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/Btn3"
+            android:text="3"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/plusBtn"
+            android:text="+"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/rootBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="√"
+            />
+
+        <Button
+            android:id="@+id/opBracketBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text="("
+            />
+
+        <Button
+            android:id="@+id/clBracketBtn"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            android:text=")"
+            />
+
+        <!-- Baris keempat -->
+        <Button
+            android:id="@+id/dotBtn"
+            android:text="."
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/Btn0"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/commaBtn"
+            android:text=","
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+
+        <Button
+            android:id="@+id/hasilBtn"
+            android:text="="
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_button"
+            />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
